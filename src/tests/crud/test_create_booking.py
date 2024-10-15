@@ -48,7 +48,7 @@ class TestCreateBooking(object):
             url=APIConstants().url_create_booking(),
             auth=None,
             headers=utils().common_header_json(),
-            payload=payload_create_booking(),
+            payload={ },
             in_json=False
         )
         verify_http_status_code(response_data=response, expected_data=500)
